@@ -14,10 +14,10 @@ namespace ConsoleApp1
             string content = File.ReadAllText(@"D:\RFV Refactoring\ConsoleApp1\ConsoleApp1\json1.json");
             var allHpis = JsonConvert.DeserializeObject<List<AllHPI>>(content);
             var allHpi = allHpis.First();
-            HpiDetails details = new HpiDetails();
-            List<HpiDetails> hpiDetails = new List<HpiDetails>();
+            HpiDetail detail = new HpiDetail();
+            List<HpiDetail> hpiDetails = new List<HpiDetail>();
             for (int i = 0; i < 6; i++)
-                hpiDetails.Add(new HpiDetails()
+                hpiDetails.Add(new HpiDetail()
                 {
                     PersonId = allHpi.PersonId,
                     CcNumber = i + 1,
@@ -44,7 +44,7 @@ namespace ConsoleApp1
             return property.GetValue(obj, null);
         }
 
-        static void MappingHpiDetails(List<HpiDetails> hpiDetails, AllHPI allHpi, PropertyInfo property, int ccNumber)
+        static void MappingHpiDetails(List<HpiDetail> hpiDetails, AllHPI allHpi, PropertyInfo property, int ccNumber)
         {
             int i = ccNumber - 1;
             hpiDetails[i].CcNumber = ccNumber;
@@ -71,7 +71,7 @@ namespace ConsoleApp1
         }
     }
 
-    public class HpiDetails
+    public class HpiDetail
     {
         public Guid PersonId { get; set; }
         public int CcNumber { get; set; }
