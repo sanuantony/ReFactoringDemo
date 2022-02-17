@@ -1,6 +1,24 @@
-﻿namespace ContentSorting;
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
 
-public record HPI1()
+
+
+namespace ContentSorting
+{
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+            var test = JsonConvert.DeserializeObject<List<HPI>>(File.ReadAllText(@"D:\RFV Refactoring\ConsoleApp1\ContentSorting\hpiDetails.json"));
+        }
+    }
+    
+}
+public record HPI()
 {
     public Guid PersonId { get; set; }
     public int CcNumber { get; set; }
@@ -15,7 +33,7 @@ public record HPI1()
     public bool IsEnabled { get; set; }
     public bool IsDeleted { get; set; }
 }
-public enum HpiType2
+public enum HpiType
 {
     Normal,
     Dynamic,

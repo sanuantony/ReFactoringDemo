@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using Newtonsoft.Json;
+
+
 
 namespace ConsoleApp1
 {
@@ -14,7 +17,8 @@ namespace ConsoleApp1
             var content = File.ReadAllText(@"D:\RFV Refactoring\ConsoleApp1\ConsoleApp1\json1.json");
             var allHpis = JsonConvert.DeserializeObject<List<AllHPI>>(content);
             var allHpi = allHpis.First();
-            var hpiDetails = PivotTable(allHpi);
+            var hpiDetails = JsonConvert.SerializeObject(PivotTable(allHpi));
+
         }
 
         private static List<HpiDetail> PivotTable(AllHPI allHpi)

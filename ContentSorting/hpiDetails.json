@@ -1,3 +1,86 @@
-﻿{
-
-}
+﻿[
+  {
+    "PersonId": "905eae81-3b94-4ebf-950e-67c94a9b05df",
+    "CcNumber": 1,
+    "ChiefComplaint": "Esophagus cancer",
+    "PopupName": "HPI_OncEsophageal",
+    "Detail": "The patient reports the pain level is 2/10.",
+    "ReasonForVisit": "Esophagus cancer",
+    "IsFollowUp": false,
+    "IsDuplicate": false,
+    "Type": 0,
+    "IsChronicCondition": false,
+    "IsEnabled": false,
+    "IsDeleted": false
+  },
+  {
+    "PersonId": "905eae81-3b94-4ebf-950e-67c94a9b05df",
+    "CcNumber": 2,
+    "ChiefComplaint": "Stomach cancer",
+    "PopupName": "HPI_OncGastric",
+    "Detail": "The patient reports the pain level is 2/10.",
+    "ReasonForVisit": "Stomach cancer",
+    "IsFollowUp": false,
+    "IsDuplicate": false,
+    "Type": 0,
+    "IsChronicCondition": false,
+    "IsEnabled": false,
+    "IsDeleted": false
+  },
+  {
+    "PersonId": "905eae81-3b94-4ebf-950e-67c94a9b05df",
+    "CcNumber": 3,
+    "ChiefComplaint": "Thyroid Cancer",
+    "PopupName": "HPI_OncHeadNeck",
+    "Detail": "The patient reports the pain level is 2/10.",
+    "ReasonForVisit": "Thyroid Cancer",
+    "IsFollowUp": false,
+    "IsDuplicate": false,
+    "Type": 0,
+    "IsChronicCondition": false,
+    "IsEnabled": false,
+    "IsDeleted": false
+  },
+  {
+    "PersonId": "905eae81-3b94-4ebf-950e-67c94a9b05df",
+    "CcNumber": 4,
+    "ChiefComplaint": "Kidney Cancer",
+    "PopupName": "HPI_OncKidney",
+    "Detail": "The patient reports the pain level is 2/10.",
+    "ReasonForVisit": "Kidney Cancer",
+    "IsFollowUp": false,
+    "IsDuplicate": false,
+    "Type": 0,
+    "IsChronicCondition": false,
+    "IsEnabled": false,
+    "IsDeleted": false
+  },
+  {
+    "PersonId": "905eae81-3b94-4ebf-950e-67c94a9b05df",
+    "CcNumber": 5,
+    "ChiefComplaint": "Leukemia - lymphocystic",
+    "PopupName": "HPI_OncLeukemia",
+    "Detail": "The patient reports the pain level is 2/10.",
+    "ReasonForVisit": "Leukemia - lymphocystic",
+    "IsFollowUp": false,
+    "IsDuplicate": false,
+    "Type": 0,
+    "IsChronicCondition": false,
+    "IsEnabled": false,
+    "IsDeleted": false
+  },
+  {
+    "PersonId": "905eae81-3b94-4ebf-950e-67c94a9b05df",
+    "CcNumber": 6,
+    "ChiefComplaint": "Small cell lung cancer",
+    "PopupName": "HPI_OncLung",
+    "Detail": "The patient reports the pain level is 2/10.",
+    "ReasonForVisit": "Small cell lung cancer",
+    "IsFollowUp": false,
+    "IsDuplicate": false,
+    "Type": 0,
+    "IsChronicCondition": false,
+    "IsEnabled": false,
+    "IsDeleted": false
+  }
+]
